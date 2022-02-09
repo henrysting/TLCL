@@ -384,6 +384,10 @@ to copy multiple items (either files or directories) into a directory.
 
 复制多个项目（文件或目录）到一个目录下。
 
+Of course, if you only use the above two methods to copy files and directories, you may find that there is an error. The most common one is to remind that you do not have the option "-r", i.e. the directory cannot be copied directly, you need to add a specific option, which will be described below.
+当然如果你真的只是使用上述的两种方式去复制文件，你可能会发现会有报错，最常见的就是会提示你缺少选项"-r"，即提示目录是无法直接复制的，需要加上特
+定的选项，下面将会介绍。
+
 ### 有用的选项和实例
 
 Here are some of the commonly used options (the short option and the equivalent long option) for cp:
