@@ -15,7 +15,7 @@ have that one, as well.
 
 故事内容不是 Linus Torvalds 在1991年怎样写了 Linux 内核的第一个版本，
 因为这些内容你可以在许多 Linux 书籍中读到。我也不是来告诉你，更早之前，Richard Stallman
-是如何开始 GNU 项目，设计了一个免费的类Unix 的操作系统。那也是一个很有意义的故事，
+是如何开始 GNU 项目，设计了一个免费的类 Unix 的操作系统。那也是一个很有意义的故事，
 但大多数 Linux 书籍也讲到了它。
 
 No, I want to tell you the story of how you can take back control of your computer.
@@ -94,8 +94,8 @@ over, say, Windows NT was the powerful command line interface which made the
 “difficult tasks possible.”
 
 因为 Linux 是以 Unix 家族的操作系统为模型写成的，所以它分享了 Unix 丰富的命令行工具。
-Unix 在20世纪80年代初显赫一时(虽然，开发它在更早之前），结果，在普遍地使用图形界面之前，
-开发了一种广泛的命令行界面。事实上，很多人选择 Linux（而不是其他的系统，比如说 Windows NT）是因为其可以使“完成复杂的任务成为可能”的强大的命令行界面。
+Unix 在20世纪80年代初显赫一时(虽然，开发它在更早之前），这使得图形界面的流行之前，命令行界面就已被广泛应用。
+事实上，很多人选择 Linux（而不是其他的系统，比如说 Windows NT）是因为其可以使“完成复杂的任务成为可能”的强大的命令行界面。
 
 ### 这本书讲什么
 
@@ -106,7 +106,7 @@ line interface in a larger sense. How does it all work? What can it do? What's
 the best way to use it?
 
 这本书介绍如何生存在 Linux 命令行的世界。不像一些书籍仅仅涉及一个程序，比如像 shell 程序，bash。
-这本书将试着向你传授如何与命令行界面友好相处。
+本书着眼于更宏大的视角，试着向你传授如何与命令行界面友好相处。
 它是怎样工作的？ 它能做什么？ 使用它的最好方法是什么？
 
 This is not a book about Linux system administration. While any serious
@@ -138,7 +138,7 @@ This book is for new Linux users who have migrated from other platforms. Most
 likely you are a “power user” of some version of Microsoft Windows. Perhaps
 your boss has told you to administer a Linux server, or maybe you're just a
 desktop user who is tired of all the security problems and want to give Linux
-a try. That's fine.here.All are welcome
+a try. That's fine.here. All are welcome.
 
 这本书是为从其它平台迁移到 Linux 系统的新手而写的。可能你是使用某个版本 Windows 系统的高手,
 或许是老板让你去管理一个 Linux 服务器，或许你只是一个桌面用户，厌倦了系统出现的各种
@@ -152,7 +152,7 @@ learning the command line is not a casual endeavor.
 
 不过一般来说，对于 Linux 的启蒙教育，没有捷径可言。学习命令行富于挑战性，而且很费气力。
 这并不是说 Linux 命令行很难学，而是它的知识量很大，不容易掌握。Linux 操作系统
-差不多有数以千计的命令可供用户操作。有必要给自己提个醒，命令行可不是轻轻松松就能学好的。
+差不多有数以千计的命令可供用户操作。有必要给你提个醒，命令行可不是轻轻松松就能学好的。
 
 On the other hand, learning the Linux command line is extremely rewarding. If
 you think you're a “power user” now, just wait. You don't know what real power
@@ -190,8 +190,7 @@ I might throw in a rant or two, as well.
 
 另一个目的，是想让读者熟悉 Unix 的思维方式，这种思维方式与 Windows 不同。在学习过程中，
 我们会帮助你理解为什么某些命令那样工作，以及它们是如何工作的。
-Linux 不仅是一款软件，也是 Unix 文化的一小部分，它有自己的语言和历史渊源。
-同时，我也许会说些过激的话。
+Linux 不仅是一款软件，也是 Unix 文化的一小部分，它有自己的语言和历史。关于这些，书中我会提到一些。
 
 This book is divided into five parts, each covering some aspect of the command
 line experience. Besides the first part, which you are reading now, this book
@@ -248,7 +247,7 @@ one of two ways:
 
 1. Install Linux on a (not so new) computer. It doesn't matter which
 distribution you choose, though most people today start out with either
-Ubuntu, Fedora, or . If in doubt, try Ubuntu first. Installing a modern
+Ubuntu, Fedora, or OpenSUSE. If in doubt, try Ubuntu first. Installing a modern
 Linux distribution can be ridiculously easy or ridiculously difficult
 depending on your hardware. I suggest a desktop computer that is a couple
 of years old and has at least 256 megabytes of RAM and 6 gigabytes of free
@@ -264,15 +263,16 @@ disadvantage of using a live CD is that it may be very slow compared to
 having Linux installed on your hard drive.  Both Ubuntu and Fedora (among
 others) have live CD versions.
 
-^
 1. 在一台（不用很新）的电脑上安装 Linux。你选择哪个 Linux 发行版安装，是无关紧要的事。
    虽然大多数人一开始选择安装 Ubuntu, Fedora, 或者 OpenSUSE。如果你拿不定主意，那就先试试 Ubuntu。
    由于主机硬件配置不同，安装 Linux 时，你可能不费吹灰之力就装上了，也可能费了九牛二虎之力还装不上。
-   所以我建议，一台使用了几年的台式机，至少要有256M 的内存，6G 的硬盘可用空间。尽可能避免使用
-   笔记本电脑和无线网络，在 Linux 环境下，它们经常不能工作。
+   所以我建议，一台使用了几年的台式机，至少要有256M 的内存，6G 的硬盘可用空间。尽可能避免安装时使用
+   笔记本电脑和无线网络，它们经常不能工作。
 
 2. 使用“Live CD.” 许多 Linux 发行版都自带一个比较酷的功能，你可以直接从系统安装盘 CDROM 中运行 Linux，
-   而不必安装 Linux。开机进入 BIOS 设置界面，更改引导项，设置为“从 CDROM 启动”。
+   而不必安装 Linux。开机进入 BIOS 设置界面，更改引导项，设置为“从 CDROM 启动”。插入 live CD，然后重启。
+   采用 live CD 而非直接安装可以很好的测试你的电脑对 linux 的兼容性。缺点就是相较于在硬盘上安装 linux，这种方式
+   过程较慢。Ubuntu 和 Fedora 等都有 live CD 的版本。
 
 Regardless of how you install Linux, you will need to have occasional
 superuser (i.e., administrative) privileges to carry out the lessons in this
@@ -316,9 +316,9 @@ AIX. I have chosen to use the popular format. If, however, you prefer to use
 >
 > 为什么我不叫它“GNU/Linux”
 >
-> 在某些领域，把 Linux 操作系统称为“GNU/Linux 操作系统”， 则政治立场正确。但“Linux”的问题是，
+> 在某些人眼里，把 Linux 操作系统称为“GNU/Linux 操作系统”，才是政治正确。但“Linux”的问题是，
 没有一个完全正确的方式能命名它，因为它是由许许多多，分布在世界各地的贡献者们，合作开发而成的。
-从技术层面讲，Linux 只是操作系统的内核名字，没别的含义。当然内核非常重要，因为有它，
+从技术层面讲，Linux 只是操作系统的内核名字。当然内核非常重要，因为有它，
 操作系统才能运行起来，但它并不能构成一个完备的操作系统。
 >
 > Richard Stallman 是一个天才的哲学家，自由软件运动创始人，自由软件基金会创办者，他创建了 GNU 项目，
